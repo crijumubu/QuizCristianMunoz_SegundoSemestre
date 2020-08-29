@@ -1,0 +1,34 @@
+﻿<Page x:Class="Quiz_WPF.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Quiz_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="388.04" d:DesignWidth="800"
+      Title="Home">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White"/>
+            <GradientStop Color="#FFFFB13E" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE2A54D"/>
+                <GradientStop Color="#FFD3D0CD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock Name="txtResults" HorizontalAlignment="Left" Height="313" Margin="516,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="235" RenderTransformOrigin="0.493,0.493" Background="White"/>
+        <Label Content="Nombre del producto" HorizontalAlignment="Left" Height="33" Margin="64,34,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
+        <TextBox Name="txtProductName" HorizontalAlignment="Left" Height="25" Margin="256,38,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <Button Name="btnSave" Content="Guardar" HorizontalAlignment="Left" Height="33" Margin="189,194,0,0" VerticalAlignment="Top" Width="104" FontSize="14" FontWeight="Bold" Click="btnSave_Click"/>
+        <Label Content="Categoría" HorizontalAlignment="Left" Height="33" Margin="64,88,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
+        <RadioButton GroupName="category" Content="Ropa" HorizontalAlignment="Left" Margin="256,97,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="category" Content="Accesorio" HorizontalAlignment="Left" Margin="256,118,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <Label Name="lblCategory" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="64,126,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,26 @@
+﻿<Page x:Class="Quiz_WPF.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Quiz_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="388.04" d:DesignWidth="800"
+      Title="Login">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF7878C4" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Iniciar sección" HorizontalAlignment="Center" Height="47" VerticalAlignment="Top" Width="180" FontSize="25" FontWeight="Bold" FontStyle="Italic" Margin="0,10,0,0"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Height="32" Margin="262,122,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.598,-0.526" FontSize="16"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Height="32" Margin="262,194,0,0" VerticalAlignment="Top" Width="95" FontSize="16"/>
+        <PasswordBox Name="txtPassword" HorizontalAlignment="Left" Height="25" Margin="400,201,0,0" VerticalAlignment="Top" Width="124"/>
+        <TextBox Name="txtUsername" HorizontalAlignment="Left" Height="24" Margin="402,126,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"/>
+        <Button Name="btnLogin" Content="Ingresar" HorizontalAlignment="Center" Margin="0,296,0,0" VerticalAlignment="Top" Height="36" Width="88" FontWeight="Bold" FontStyle="Normal" Click="btnLogin_Click" FontSize="14"/>
+
+    </Grid>
+</Page>
