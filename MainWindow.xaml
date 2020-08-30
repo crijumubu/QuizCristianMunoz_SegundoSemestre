@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Label Content="MI APLICACIÓN" HorizontalAlignment="Center" Height="52" VerticalAlignment="Top" Width="276" FontSize="35" FontStyle="Italic" FontWeight="Bold" RenderTransformOrigin="0.495,0.581" Margin="0,-7,0,0" />
+
         <Frame Name="frameMain" Content="" Margin="0,46,0,0" NavigationUIVisibility="Hidden"/>
+        <Label Content="Counter Picks" HorizontalAlignment="Center" Height="54" Margin="0,-13,0,0" VerticalAlignment="Top" Width="244" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
+
 
     </Grid>
 

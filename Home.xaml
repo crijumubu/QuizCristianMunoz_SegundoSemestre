@@ -21,14 +21,22 @@
                 <GradientStop Color="#FFD3D0CD" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock Name="txtResults" HorizontalAlignment="Left" Height="313" Margin="516,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="235" RenderTransformOrigin="0.493,0.493" Background="White"/>
-        <Label Content="Nombre del producto" HorizontalAlignment="Left" Height="33" Margin="64,34,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
-        <TextBox Name="txtProductName" HorizontalAlignment="Left" Height="25" Margin="256,38,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
-        <Button Name="btnSave" Content="Guardar" HorizontalAlignment="Left" Height="33" Margin="189,194,0,0" VerticalAlignment="Top" Width="104" FontSize="14" FontWeight="Bold" Click="btnSave_Click"/>
-        <Label Content="Categoría" HorizontalAlignment="Left" Height="33" Margin="64,88,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
-        <RadioButton GroupName="category" Content="Ropa" HorizontalAlignment="Left" Margin="256,97,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton GroupName="category" Content="Accesorio" HorizontalAlignment="Left" Margin="256,118,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <Label Content="Nombre del campeón" HorizontalAlignment="Left" Height="33" Margin="64,34,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
+        <TextBox Name="txtChampion" HorizontalAlignment="Left" Height="25" Margin="300,34,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <Button Name="btnSearch" Content="Buscar" HorizontalAlignment="Left" Height="33" Margin="190,249,0,0" VerticalAlignment="Top" Width="104" FontSize="14" FontWeight="Bold" Click="btnSearch_Click"/>
+        <Label Content="Posición o rol" HorizontalAlignment="Left" Height="33" Margin="64,85,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
         <Label Name="lblCategory" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="64,126,0,0" VerticalAlignment="Top"/>
-
+        <ComboBox Name="cmbRol" Text="Top"  HorizontalAlignment="Left" Margin="300,89,0,0" VerticalAlignment="Top" Width="77" Height="25" ItemsSource="{Binding Names}" Background="Black"/>
+        <CheckBox Name="chkAdvices" Content="Activar" HorizontalAlignment="Left" Margin="300,146,0,0" VerticalAlignment="Top" Checked="chkAdvices_Checked"/>
+        <Label Content="Consejos contra el campeón" HorizontalAlignment="Left" Height="33" Margin="64,136,0,0" VerticalAlignment="Top" Width="220" FontSize="16"/>
+        <Label Name="lblAdvice" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="69,240,0,0" VerticalAlignment="Top"/>
+        <Calendar Name="clnConsult" Visibility="Hidden" HorizontalAlignment="Left" Margin="148,174,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="DtaConsult" Visibility="Hidden" HorizontalAlignment="Left" Margin="174,317,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button Name="btnLogOut" Content="Salir" HorizontalAlignment="Left" Height="33" Margin="190,296,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold" FontSize="14" Click="btnLogout_Click"/>
+        <StackPanel HorizontalAlignment="Left" Height="324" Margin="545,34,0,0" VerticalAlignment="Top" Width="215" Background="White">
+            <TextBlock x:Name="txtResults" Text="" TextWrapping="Wrap" Width="215" RenderTransformOrigin="0.493,0.493" Background="White" Height="285"/>
+            <Button Name="btnClean" Content="Limpiar" Height="32" Width="95" FontWeight="Bold" FontSize="14" Click="btnClean_Click" Margin="0,2,0,0"/>
+        </StackPanel>
+        <Label Name="lblClean" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="545,363,0,0" VerticalAlignment="Top" Width="215"/>
     </Grid>
 </Page>
